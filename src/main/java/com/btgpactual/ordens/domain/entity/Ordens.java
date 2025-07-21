@@ -24,9 +24,8 @@ import lombok.Setter;
 public class Ordens {
 
 	@MongoId
-	private long id;
-	private Integer codigoPedido;
-	private Integer codigoCliente; 
+	private Long  codigoPedido;
+	private Long codigoCliente; 
 	private List<Itens> itens;
 	@Indexed(name = "customer_id_index")
 	private Long customerId;
